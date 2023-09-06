@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class MyTab extends StatelessWidget {
   final String iconPath;
-  const MyTab({super.key, required this.iconPath});
+  final String textTitle;
+  const MyTab({super.key, required this.iconPath, required this.textTitle});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,7 @@ class MyTab extends StatelessWidget {
         ),
         child: Image.asset(
           iconPath,
-          color: Colors.grey[600],
+          color: Colors.pink[600],
         ),
       ),
     );

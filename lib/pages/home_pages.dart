@@ -20,22 +20,27 @@ class _HomePageState extends State<HomePage> {
     // donut tabs
     MyTab(
       iconPath: 'assets/icons/donut.png',
+      textTitle: 'Donut',
     ),
     // burger tabs
     MyTab(
       iconPath: 'assets/icons/burger.png',
+      textTitle: 'Donut',
     ),
     // smoothe tabs
     MyTab(
       iconPath: 'assets/icons/soda.png',
+      textTitle: 'Donut',
     ),
     // pancake tabs
     MyTab(
       iconPath: 'assets/icons/cupcake.png',
+      textTitle: 'Donut',
     ),
     // pizza tabs
     MyTab(
       iconPath: 'assets/icons/pizza.png',
+      textTitle: 'Donut',
     ),
   ];
 
