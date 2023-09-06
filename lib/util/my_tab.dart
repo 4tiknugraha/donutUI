@@ -11,7 +11,9 @@ class MyTab extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(12),
         decoration: BoxDecoration(
-            color: Colors.grey[200], borderRadius: BorderRadius.circular(12)),
+          color: Colors.grey[200],
+          borderRadius: BorderRadius.circular(12),
+        ),
         child: Image.asset(
           iconPath,
           color: Colors.grey[600],

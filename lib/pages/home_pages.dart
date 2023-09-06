@@ -21,7 +21,6 @@ class _HomePageState extends State<HomePage> {
     MyTab(
       iconPath: 'assets/icons/donut.png',
     ),
-
     // burger tabs
     MyTab(
       iconPath: 'assets/icons/burger.png',
@@ -82,12 +81,15 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Text(
-                    "i want to eat",
+                    "i want to eat ",
                     style: TextStyle(fontSize: 24),
                   ),
                   Text(
-                    " Eat",
-                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+                    "Eat",
+                    style: TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline),
                   ),
                 ],
               ),

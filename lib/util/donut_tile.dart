@@ -6,7 +6,7 @@ class DonutTile extends StatelessWidget {
   final donutColor;
   final String imageName;
 
-  final double borderRadius = 12;
+  final double borderRadius = 20;
   const DonutTile({
     super.key,
     required this.donutFlavor,
@@ -34,12 +34,13 @@ class DonutTile extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: donutColor[100],
                     borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(borderRadius),
-                        topRight: Radius.circular(borderRadius)),
+                      bottomLeft: Radius.circular(borderRadius),
+                      topRight: Radius.circular(borderRadius),
+                    ),
                   ),
                   padding: EdgeInsets.all(12),
                   child: Text(
-                    '\Rp ' + donutPrice,
+                    '\$' + donutPrice,
                     style: TextStyle(
                       color: donutColor[800],
                       fontWeight: FontWeight.bold,
@@ -51,12 +52,47 @@ class DonutTile extends StatelessWidget {
             ),
             // donut picture
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 36.0,
+                vertical: 16,
+              ),
               child: Image.asset(imageName),
-            )
+            ),
             // donut flavor
-
-            // love icon +
+            Text(
+              donutFlavor,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+            SizedBox(height: 4),
+            Text(
+              "Dunkins",
+              style: TextStyle(color: Colors.grey[600]),
+            ),
+            // love icon + add Button
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  // love icon
+                  Icon(
+                    Icons.favorite,
+                    color: Colors.pink[400],
+                  ),
+                  Text(
+                    'Add',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      decoration: TextDecoration.underline,
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
